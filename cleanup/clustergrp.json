@@ -1,0 +1,608 @@
+{
+ "clusterGroups": [
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "class-delivery-cg"
+   },
+   "meta": {
+    "uid": "cg:01DSQBWEZKA0NBKPHBM6JHE6K8",
+    "resourceVersion": "1664",
+    "creationTime": "2019-11-15T11:06:31.281738Z",
+    "updateTime": "2020-08-06T08:06:44.145374Z",
+    "description": "Class Delivery Cluster Group",
+    "labels": {
+     "livefire.desc": "Class Delivery Cluster Group",
+     "livefire.owner": "skaloferov"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:class-delivery-cg"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "default"
+   },
+   "meta": {
+    "uid": "cg:01DSP41GABT3XWPSM3W4RZ0Q6T",
+    "resourceVersion": "1667",
+    "creationTime": "2019-11-14T23:30:13.449918Z",
+    "updateTime": "2020-08-06T08:08:12.685509Z",
+    "description": "Default cluster group",
+    "labels": {
+     "livefire.desc": "TMC Default Cluster Group"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:default"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "demand-test"
+   },
+   "meta": {
+    "uid": "cg:01F272VSRV4AAVKTJE36BYWRZ9",
+    "resourceVersion": "6287",
+    "creationTime": "2021-04-01T16:04:36.247185Z",
+    "updateTime": "2021-04-01T16:04:36.247185Z",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:demand-test"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "elasticsky-cg"
+   },
+   "meta": {
+    "uid": "cg:01EYC1KZVBHKZ3823QQY1089GF",
+    "resourceVersion": "6628",
+    "creationTime": "2021-02-12T21:16:16.616779Z",
+    "updateTime": "2021-04-16T19:28:14.867145Z",
+    "description": "ElasticSky Cluster Group",
+    "labels": {
+     "livefire.owner": "skaloferov"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:elasticsky-cg"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "hxue-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MCSVQY77AXQK6MZ6Z0FDD5",
+    "resourceVersion": "6679",
+    "creationTime": "2021-04-19T06:24:07.933110Z",
+    "updateTime": "2021-04-19T06:24:07.933110Z",
+    "description": "This is a cluster group for production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:hxue-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "kcodadu-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MCRA8VZM7YMWDGZJAMRKDJ",
+    "resourceVersion": "6677",
+    "creationTime": "2021-04-19T06:23:17.273292Z",
+    "updateTime": "2021-04-19T06:23:17.273292Z",
+    "description": "Cluster for prod apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:kcodadu-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "livefire-dev-cg"
+   },
+   "meta": {
+    "uid": "cg:01DSQBVRHF5ZA12Y88BT6QA4P3",
+    "resourceVersion": "1658",
+    "creationTime": "2019-11-15T11:06:08.302571Z",
+    "updateTime": "2020-08-06T08:04:50.717391Z",
+    "description": "Livefire Development Cluster Group",
+    "labels": {
+     "livefire.desc": "Livefire Development Cluster Group"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:livefire-dev-cg"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "livefire-dev-test"
+   },
+   "meta": {
+    "uid": "cg:01ES6E27GDPND6AHWPK7Z51HFZ",
+    "resourceVersion": "4232",
+    "creationTime": "2020-12-10T13:39:50.412465Z",
+    "updateTime": "2020-12-10T13:39:50.412465Z",
+    "description": "Livefire application dev and test group",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:livefire-dev-test"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "livefire-tsm-lab"
+   },
+   "meta": {
+    "uid": "cg:01EP7MG96C1ZKR8D40YBYYEH50",
+    "resourceVersion": "3525",
+    "creationTime": "2020-11-03T18:04:31.306616Z",
+    "updateTime": "2020-11-03T18:04:31.306616Z",
+    "description": "This cluster group will contain the clusters for the tsm lab",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:livefire-tsm-lab"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "mderecho-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MGWK5BM391114RBPEWQ80E",
+    "resourceVersion": "6693",
+    "creationTime": "2021-04-19T07:35:31.753116Z",
+    "updateTime": "2021-04-19T07:35:31.753116Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:mderecho-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "mgmt-clusters"
+   },
+   "meta": {
+    "uid": "cg:01ESGE5MNT4XDT4XJMGG953NPK",
+    "resourceVersion": "4300",
+    "creationTime": "2020-12-14T10:54:06.518234Z",
+    "updateTime": "2020-12-14T10:54:06.518234Z",
+    "description": "All Management Clusters",
+    "labels": {
+     "owner": "sddc"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:mgmt-clusters"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "mgrab-cna-prod"
+   },
+   "meta": {
+    "uid": "cg:01F0H8YJWGD0G5SF0N368XYWN0",
+    "resourceVersion": "5811",
+    "creationTime": "2021-03-11T18:31:59.628537Z",
+    "updateTime": "2021-03-11T18:31:59.628537Z",
+    "description": "Marc's Cluster Group for Production Apps",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:mgrab-cna-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "mhermansen-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MFNHTVJYGNY2MQ8KRWZS6M",
+    "resourceVersion": "6689",
+    "creationTime": "2021-04-19T07:14:12.442168Z",
+    "updateTime": "2021-04-19T07:18:28.880692Z",
+    "description": "Production Apps cluster group",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:mhermansen-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "observability-prod"
+   },
+   "meta": {
+    "uid": "cg:01F0V9Z0A0WYTJSE2YB8D9TZCD",
+    "resourceVersion": "5896",
+    "creationTime": "2021-03-15T16:02:06.267455Z",
+    "updateTime": "2021-03-15T16:06:20.082874Z",
+    "description": "cg to demo observability",
+    "labels": {
+     "owner": "toddb"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:observability-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "rcamalig-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MG76K0275VKQZH66S8P7T5",
+    "resourceVersion": "6690",
+    "creationTime": "2021-04-19T07:23:50.750750Z",
+    "updateTime": "2021-04-19T07:23:50.750750Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:rcamalig-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "rgupta-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MGEMZ70Q80CZCJGF29KSMQ",
+    "resourceVersion": "6692",
+    "creationTime": "2021-04-19T07:27:54.853278Z",
+    "updateTime": "2021-04-19T07:27:54.853278Z",
+    "description": "This is a Cluster Group for Production apps",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:rgupta-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "rkhoo-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MCK6RZTP6QRW8WW54AH5X0",
+    "resourceVersion": "6674",
+    "creationTime": "2021-04-19T06:20:29.854119Z",
+    "updateTime": "2021-04-19T06:20:29.854119Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:rkhoo-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "sqteo-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MFDXCG28S7J3YZ8VQEZM34",
+    "resourceVersion": "6686",
+    "creationTime": "2021-04-19T07:10:02.126797Z",
+    "updateTime": "2021-04-19T07:10:02.126797Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:sqteo-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "tanmaybiswas-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MD1VR38HFNJ5SE3Z2Y99SX",
+    "resourceVersion": "6682",
+    "creationTime": "2021-04-19T06:28:30.082451Z",
+    "updateTime": "2021-04-19T06:28:30.082451Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:tanmaybiswas-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "tito-clusters"
+   },
+   "meta": {
+    "uid": "cg:01EX29WBAEDNCRKNGM50P5N3FY",
+    "resourceVersion": "4915",
+    "creationTime": "2021-01-27T16:12:32.979239Z",
+    "updateTime": "2021-01-27T16:12:32.979239Z",
+    "description": "Livefire application dev and test group",
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:tito-clusters"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "toddb-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3E7B2FEPVJG40TMX4WC9XC6",
+    "resourceVersion": "6630",
+    "creationTime": "2021-04-16T20:53:13.831386Z",
+    "updateTime": "2021-04-16T20:53:13.831386Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:toddb-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "toddb-cna-prod"
+   },
+   "meta": {
+    "uid": "cg:01F0H6HSDTVPNQG1QH9SW3S15W",
+    "resourceVersion": "5898",
+    "creationTime": "2021-03-11T17:50:03.190025Z",
+    "updateTime": "2021-03-15T16:08:31.316065Z",
+    "labels": {
+     "owner": "toddb"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:toddb-cna-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "vkumar-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MCNJBP8XVWBE92PW9312S9",
+    "resourceVersion": "6675",
+    "creationTime": "2021-04-19T06:21:47.253847Z",
+    "updateTime": "2021-04-19T06:21:47.253847Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:vkumar-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "yhkwak-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MDQS2JRYS06V70DR6M5B9N",
+    "resourceVersion": "6684",
+    "creationTime": "2021-04-19T06:40:28.241076Z",
+    "updateTime": "2021-04-19T06:40:28.241076Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:yhkwak-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  },
+  {
+   "fullName": {
+    "orgId": "8fa66959-9779-4693-8c76-ff8a08888dd0",
+    "name": "yjeong-class-prod"
+   },
+   "meta": {
+    "uid": "cg:01F3MDPH5DEJPJ3X526ZK5PPDJ",
+    "resourceVersion": "6683",
+    "creationTime": "2021-04-19T06:39:47.371301Z",
+    "updateTime": "2021-04-19T06:39:47.371301Z",
+    "description": "This is a Cluster Group for Production apps",
+    "labels": {
+     "class": "bespin"
+    },
+    "annotations": {
+     "authoritativeRID": "rid:cg:8fa66959-9779-4693-8c76-ff8a08888dd0:yjeong-class-prod"
+    },
+    "parentReferences": [
+     {
+      "rid": "rid:org:8fa66959-9779-4693-8c76-ff8a08888dd0",
+      "uid": "8fa66959-9779-4693-8c76-ff8a08888dd0"
+     }
+    ]
+   }
+  }
+ ],
+ "totalCount": "25"
+}

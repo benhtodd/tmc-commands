@@ -5,8 +5,9 @@
 ###
  
 ### Hard coded variables ###
-clusterNameBase="toddb-tmc-cluster"
-clusterGroupName="toddb-cna-prod"
+clusterNameBase="short"
+#clusterNameBase="realylongnameherenow"
+clusterGroupName="demand-test"
 k8sVersion="v1.18.15+vmware.1-tkg.1.600e412"
 clusterCount=3  #Set 'clusterCount' to number of clusters to build.
 num=009  #Set 'num' to starting/first cluster number, include padded 0s.  eg: 00013
@@ -36,7 +37,7 @@ fi
 for clusterNum in $(seq -w $num $max)
 do
         clusterName="$clusterNameBase-$clusterNum"
-        tmc cluster create -t tkgs -n $clusterName -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --version $k8sVersion --storage-class vsphere-with-kubernetes --management-cluster-name livefire-cs-sv01 --provisioner-name observability --worker-instance-type best-effort-xlarge --instance-type best-effort-xlarge -q 1
+        tmc cluster create -t tkgs -n $clusterName -g $clusterGroupName --allowed-storage-classes vsphere-with-kubernetes --version $k8sVersion --storage-class vsphere-with-kubernetes --management-cluster-name livefire-cs-sv01 --provisioner-name capacity-test --worker-instance-type best-effort-xlarge --instance-type best-effort-small -q 1
         echo "$clusterName is provisioning..."
 done
  

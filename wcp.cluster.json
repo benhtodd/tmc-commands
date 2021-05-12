@@ -1,0 +1,523 @@
+Name:               422a5f68a33d1c91a7088a2c95d8c8f3
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=422a5f68a33d1c91a7088a2c95d8c8f3
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 13:55:29 -0700
+Taints:             node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "422a5f68a33d1c91a7088a2c95d8c8f3" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Tue, 04 May 2021 09:44:49 -0700   Wed, 17 Mar 2021 14:00:43 -0700   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Tue, 04 May 2021 09:44:49 -0700   Wed, 17 Mar 2021 14:00:43 -0700   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Tue, 04 May 2021 09:44:49 -0700   Wed, 17 Mar 2021 14:00:43 -0700   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Tue, 04 May 2021 09:44:49 -0700   Wed, 17 Mar 2021 14:25:15 -0700   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  100.100.0.213
+  Hostname:    422a5f68a33d1c91a7088a2c95d8c8f3
+Capacity:
+  cpu:                8
+  ephemeral-storage:  32881404Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             24642096Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  32881404Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             24642096Ki
+  pods:               110
+System Info:
+  Machine ID:                                b10b3b39b30a4effa71357b1c21361b1
+  System UUID:                               685f2a42-3da3-911c-a708-8a2c95d8c8f3
+  Boot ID:                                   bf4870d8-2519-4a68-b811-c1fe98da0a1d
+  Kernel Version:                            4.19.164-3.ph3-esx
+  OS Image:                                  VMware Photon OS/Linux
+  Operating System:                          linux
+  Architecture:                              amd64
+  Container Runtime Version:                 containerd://1.3.3
+  Kubelet Version:                           v1.19.1+wcp.2
+  Kube-Proxy Version:                        v1.19.1+wcp.2
+Non-terminated Pods:                         (34 in total)
+  Namespace                                  Name                                                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                                  ----                                                               ------------  ----------  ---------------  -------------  ---
+  kube-system                                coredns-855c5b4cfd-szhw4                                           100m (1%)     0 (0%)      70Mi (0%)        170Mi (0%)     47d
+  kube-system                                csr-signer-422a5f68a33d1c91a7088a2c95d8c8f3                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                docker-registry-422a5f68a33d1c91a7088a2c95d8c8f3                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                etcd-422a5f68a33d1c91a7088a2c95d8c8f3                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-apiserver-422a5f68a33d1c91a7088a2c95d8c8f3                    250m (3%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-controller-manager-422a5f68a33d1c91a7088a2c95d8c8f3           200m (2%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-proxy-5d9xf                                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-scheduler-422a5f68a33d1c91a7088a2c95d8c8f3                    100m (1%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kubectl-plugin-vsphere-422a5f68a33d1c91a7088a2c95d8c8f3            0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                wcp-authproxy-422a5f68a33d1c91a7088a2c95d8c8f3                     0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                wcp-fip-422a5f68a33d1c91a7088a2c95d8c8f3                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  svc-tmc-c8                                 agent-updater-7879748745-xwz4v                                     0 (0%)        100m (1%)   100Mi (0%)       150Mi (0%)     35d
+  svc-tmc-c8                                 cluster-health-extension-547cc46fc5-5zsdd                          0 (0%)        400m (5%)   128Mi (0%)       2Gi (8%)       12d
+  svc-tmc-c8                                 extension-manager-5fdc458b55-5g4wr                                 0 (0%)        100m (1%)   128Mi (0%)       256Mi (1%)     13d
+  svc-tmc-c8                                 sync-agent-794f49f564-wxmmk                                        0 (0%)        400m (5%)   128Mi (0%)       1Gi (4%)       4d21h
+  svc-tmc-c8                                 vsphere-resource-retriever-678ff4b466-6kj9m                        0 (0%)        200m (2%)   32Mi (0%)        300Mi (1%)     6d21h
+  vmware-system-appplatform-operator-system  vmware-system-psp-operator-mgr-5b59757747-7ms9j                    100m (1%)     800m (10%)  20Mi (0%)        200Mi (0%)     47d
+  vmware-system-capw                         capi-controller-manager-644998658d-25jq7                           20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-bootstrap-controller-manager-65b8d5c4dc-kgfsf         20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-bootstrap-webhook-856dc99d95-5gfg9                    20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-control-plane-controller-manager-8565c86bbf-v969w     20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-control-plane-webhook-5479fdb9b5-2hpgz                20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-webhook-d89458f48-b2qnm                                       20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capw-controller-manager-dc6dcb45c-dm7r2                            20m (0%)      350m (4%)   150Mi (0%)       800Mi (3%)     47d
+  vmware-system-capw                         capw-webhook-cd589644b-gtm92                                       20m (0%)      350m (4%)   150Mi (0%)       800Mi (3%)     47d
+  vmware-system-cert-manager                 cert-manager-6bfcdd64d7-9ndrw                                      0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-cert-manager                 cert-manager-cainjector-d6d65789-2tnmz                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-license-operator             vmware-system-license-operator-controller-manager-589bb8697p46j    100m (1%)     150m (1%)   20Mi (0%)        300Mi (1%)     47d
+  vmware-system-logging                      fluentbit-pwn5z                                                    100m (1%)     500m (6%)   0 (0%)           0 (0%)         47d
+  vmware-system-registry                     vmware-registry-controller-manager-dcb97f7cf-j5twr                 200m (2%)     200m (2%)   150Mi (0%)       350Mi (1%)     47d
+  vmware-system-tkg                          vmware-system-tkg-controller-manager-788c468fd-rsqq6               110m (1%)     400m (5%)   120Mi (0%)       460Mi (1%)     47d
+  vmware-system-tkg                          vmware-system-tkg-webhook-6bd4c4fd49-p5c6k                         20m (0%)      400m (5%)   90Mi (0%)        120Mi (0%)     47d
+  vmware-system-ucs                          upgrade-compatibility-service-999b9b485-qvj4w                      100m (1%)     1 (12%)     20Mi (0%)        30Mi (0%)      47d
+  vmware-system-vmop                         vmware-system-vmop-controller-manager-6b7dbb78df-n6dbr             100m (1%)     250m (3%)   75Mi (0%)        300Mi (1%)     47d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                1640m (20%)  8600m (107%)
+  memory             2281Mi (9%)  14508Mi (60%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+Events:              <none>
+
+
+Name:               422ac3a70ac2eb52819187ba484f3e49
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=422ac3a70ac2eb52819187ba484f3e49
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 13:38:44 -0700
+Taints:             node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "422ac3a70ac2eb52819187ba484f3e49" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Tue, 04 May 2021 09:47:55 -0700   Wed, 17 Mar 2021 14:25:25 -0700   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Tue, 04 May 2021 09:47:55 -0700   Wed, 17 Mar 2021 14:25:25 -0700   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Tue, 04 May 2021 09:47:55 -0700   Wed, 17 Mar 2021 14:25:25 -0700   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Tue, 04 May 2021 09:47:55 -0700   Wed, 17 Mar 2021 14:25:25 -0700   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  100.100.0.212
+  Hostname:    422ac3a70ac2eb52819187ba484f3e49
+Capacity:
+  cpu:                8
+  ephemeral-storage:  32881404Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             24642112Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  32881404Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             24642112Ki
+  pods:               110
+System Info:
+  Machine ID:                                355cb49efce04584a3b314b427036860
+  System UUID:                               a7c32a42-c20a-52eb-8191-87ba484f3e49
+  Boot ID:                                   a6caf539-a46d-4880-ba07-44934aedb111
+  Kernel Version:                            4.19.164-3.ph3-esx
+  OS Image:                                  VMware Photon OS/Linux
+  Operating System:                          linux
+  Architecture:                              amd64
+  Container Runtime Version:                 containerd://1.3.3
+  Kubelet Version:                           v1.19.1+wcp.2
+  Kube-Proxy Version:                        v1.19.1+wcp.2
+Non-terminated Pods:                         (29 in total)
+  Namespace                                  Name                                                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                                  ----                                                               ------------  ----------  ---------------  -------------  ---
+  kube-system                                coredns-855c5b4cfd-cc4m6                                           100m (1%)     0 (0%)      70Mi (0%)        170Mi (0%)     47d
+  kube-system                                csr-signer-422ac3a70ac2eb52819187ba484f3e49                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                docker-registry-422ac3a70ac2eb52819187ba484f3e49                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                etcd-422ac3a70ac2eb52819187ba484f3e49                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-apiserver-422ac3a70ac2eb52819187ba484f3e49                    250m (3%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-controller-manager-422ac3a70ac2eb52819187ba484f3e49           200m (2%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-proxy-4t7x6                                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kube-scheduler-422ac3a70ac2eb52819187ba484f3e49                    100m (1%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                kubectl-plugin-vsphere-422ac3a70ac2eb52819187ba484f3e49            0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                wcp-authproxy-422ac3a70ac2eb52819187ba484f3e49                     0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                                wcp-fip-422ac3a70ac2eb52819187ba484f3e49                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-appplatform-operator-system  vmware-system-appplatform-operator-mgr-0                           100m (1%)     800m (10%)  20Mi (0%)        200Mi (0%)     47d
+  vmware-system-capw                         capi-controller-manager-644998658d-l6rhj                           20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-bootstrap-controller-manager-65b8d5c4dc-tvkhp         20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-bootstrap-webhook-856dc99d95-cclsg                    20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-control-plane-controller-manager-8565c86bbf-5rvb8     20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-kubeadm-control-plane-webhook-5479fdb9b5-ldrhd                20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capi-webhook-d89458f48-d7t9w                                       20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw                         capw-controller-manager-dc6dcb45c-9vksq                            20m (0%)      350m (4%)   150Mi (0%)       800Mi (3%)     47d
+  vmware-system-capw                         capw-webhook-cd589644b-5lfr4                                       20m (0%)      350m (4%)   150Mi (0%)       800Mi (3%)     47d
+  vmware-system-csi                          vsphere-csi-controller-67798bd86-m6tlq                             0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-kubeimage                    image-controller-5b66856896-4sfw4                                  0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-license-operator             vmware-system-license-operator-controller-manager-589bb869nfxnv    100m (1%)     150m (1%)   20Mi (0%)        300Mi (1%)     47d
+  vmware-system-logging                      fluentbit-55j72                                                    100m (1%)     500m (6%)   0 (0%)           0 (0%)         47d
+  vmware-system-nsx                          nsx-ncp-97f56b8b8-6hbs9                                            0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-tkg                          vmware-system-tkg-controller-manager-788c468fd-46mls               110m (1%)     400m (5%)   120Mi (0%)       460Mi (1%)     47d
+  vmware-system-tkg                          vmware-system-tkg-webhook-6bd4c4fd49-9zvbh                         20m (0%)      400m (5%)   90Mi (0%)        120Mi (0%)     47d
+  vmware-system-ucs                          upgrade-compatibility-service-999b9b485-jmhd7                      100m (1%)     1 (12%)     20Mi (0%)        30Mi (0%)      47d
+  vmware-system-vmop                         vmware-system-vmop-controller-manager-6b7dbb78df-sbwp6             100m (1%)     250m (3%)   75Mi (0%)        300Mi (1%)     47d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                1440m (18%)  7200m (90%)
+  memory             1615Mi (6%)  10380Mi (43%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+Events:              <none>
+
+
+Name:               422aeaf2b6a7e7076124fc101819626c
+Roles:              master
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=linux
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=422aeaf2b6a7e7076124fc101819626c
+                    kubernetes.io/os=linux
+                    node-role.kubernetes.io/master=
+Annotations:        kubeadm.alpha.kubernetes.io/cri-socket: /run/containerd/containerd.sock
+                    node.alpha.kubernetes.io/ttl: 0
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 14:12:38 -0700
+Taints:             node-role.kubernetes.io/master:NoSchedule
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "422aeaf2b6a7e7076124fc101819626c" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type             Status  LastHeartbeatTime                 LastTransitionTime                Reason                       Message
+  ----             ------  -----------------                 ------------------                ------                       -------
+  MemoryPressure   False   Tue, 04 May 2021 09:45:04 -0700   Wed, 17 Mar 2021 14:17:37 -0700   KubeletHasSufficientMemory   kubelet has sufficient memory available
+  DiskPressure     False   Tue, 04 May 2021 09:45:04 -0700   Wed, 17 Mar 2021 14:17:37 -0700   KubeletHasNoDiskPressure     kubelet has no disk pressure
+  PIDPressure      False   Tue, 04 May 2021 09:45:04 -0700   Wed, 17 Mar 2021 14:17:37 -0700   KubeletHasSufficientPID      kubelet has sufficient PID available
+  Ready            True    Tue, 04 May 2021 09:45:04 -0700   Wed, 17 Mar 2021 14:24:09 -0700   KubeletReady                 kubelet is posting ready status
+Addresses:
+  InternalIP:  100.100.0.210
+  Hostname:    422aeaf2b6a7e7076124fc101819626c
+Capacity:
+  cpu:                8
+  ephemeral-storage:  32881404Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             24642112Ki
+  pods:               110
+Allocatable:
+  cpu:                8
+  ephemeral-storage:  32881404Ki
+  hugepages-1Gi:      0
+  hugepages-2Mi:      0
+  memory:             24642112Ki
+  pods:               110
+System Info:
+  Machine ID:                     66aba709f07c4e32bfdd9de07c8078ee
+  System UUID:                    f2ea2a42-a7b6-07e7-6124-fc101819626c
+  Boot ID:                        c4035736-1d9a-4e84-9136-2be3f7b6655d
+  Kernel Version:                 4.19.164-3.ph3-esx
+  OS Image:                       VMware Photon OS/Linux
+  Operating System:               linux
+  Architecture:                   amd64
+  Container Runtime Version:      containerd://1.3.3
+  Kubelet Version:                v1.19.1+wcp.2
+  Kube-Proxy Version:             v1.19.1+wcp.2
+Non-terminated Pods:              (29 in total)
+  Namespace                       Name                                                               CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                       ----                                                               ------------  ----------  ---------------  -------------  ---
+  kube-system                     coredns-855c5b4cfd-lxhv2                                           100m (1%)     0 (0%)      70Mi (0%)        170Mi (0%)     47d
+  kube-system                     csr-signer-422aeaf2b6a7e7076124fc101819626c                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     docker-registry-422aeaf2b6a7e7076124fc101819626c                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     etcd-422aeaf2b6a7e7076124fc101819626c                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     kube-apiserver-422aeaf2b6a7e7076124fc101819626c                    250m (3%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     kube-controller-manager-422aeaf2b6a7e7076124fc101819626c           200m (2%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     kube-proxy-c4tfh                                                   0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     kube-scheduler-422aeaf2b6a7e7076124fc101819626c                    100m (1%)     0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     kubectl-plugin-vsphere-422aeaf2b6a7e7076124fc101819626c            0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     wcp-authproxy-422aeaf2b6a7e7076124fc101819626c                     0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  kube-system                     wcp-fip-422aeaf2b6a7e7076124fc101819626c                           0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  svc-tmc-c8                      extension-updater-5885cd7956-jkt7b                                 0 (0%)        100m (1%)   128Mi (0%)       256Mi (1%)     14d
+  svc-tmc-c8                      intent-agent-fdb6b9765-jrzs6                                       0 (0%)        100m (1%)   150Mi (0%)       300Mi (1%)     5d21h
+  svc-tmc-c8                      tmc-auto-attach-6f97cb49cb-w96pt                                   0 (0%)        100m (1%)   100Mi (0%)       150Mi (0%)     13d
+  vmware-system-capw              capi-controller-manager-644998658d-rlwkm                           20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw              capi-kubeadm-bootstrap-controller-manager-65b8d5c4dc-wqg57         20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw              capi-kubeadm-bootstrap-webhook-856dc99d95-8pffp                    20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw              capi-kubeadm-control-plane-controller-manager-8565c86bbf-lw49m     20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw              capi-kubeadm-control-plane-webhook-5479fdb9b5-9lpb6                20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw              capi-webhook-d89458f48-bqrg8                                       20m (0%)      500m (6%)   150Mi (0%)       1200Mi (4%)    47d
+  vmware-system-capw              capw-controller-manager-dc6dcb45c-ftbhm                            20m (0%)      350m (4%)   150Mi (0%)       800Mi (3%)     47d
+  vmware-system-capw              capw-webhook-cd589644b-4wgzh                                       20m (0%)      350m (4%)   150Mi (0%)       800Mi (3%)     47d
+  vmware-system-cert-manager      cert-manager-webhook-6458d865dc-qgflt                              0 (0%)        0 (0%)      0 (0%)           0 (0%)         47d
+  vmware-system-license-operator  vmware-system-license-operator-controller-manager-589bb8695lvfk    100m (1%)     150m (1%)   20Mi (0%)        300Mi (1%)     47d
+  vmware-system-logging           fluentbit-r2xgp                                                    100m (1%)     500m (6%)   0 (0%)           0 (0%)         47d
+  vmware-system-tkg               vmware-system-tkg-controller-manager-788c468fd-x8f7f               110m (1%)     400m (5%)   120Mi (0%)       460Mi (1%)     47d
+  vmware-system-tkg               vmware-system-tkg-webhook-6bd4c4fd49-rqg4d                         20m (0%)      400m (5%)   90Mi (0%)        120Mi (0%)     47d
+  vmware-system-ucs               upgrade-compatibility-service-999b9b485-nb8c8                      100m (1%)     1 (12%)     20Mi (0%)        30Mi (0%)      47d
+  vmware-system-vmop              vmware-system-vmop-controller-manager-6b7dbb78df-7q822             100m (1%)     250m (3%)   75Mi (0%)        300Mi (1%)     47d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests     Limits
+  --------           --------     ------
+  cpu                1340m (16%)  6700m (83%)
+  memory             1973Mi (8%)  10886Mi (45%)
+  ephemeral-storage  0 (0%)       0 (0%)
+  hugepages-1Gi      0 (0%)       0 (0%)
+  hugepages-2Mi      0 (0%)       0 (0%)
+Events:              <none>
+
+
+Name:               esxi-w-01.lab.livefire.dev
+Roles:              agent
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=CRX
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=esxi-w-01.lab.livefire.dev
+                    kubernetes.io/os=CRX
+                    node-role.kubernetes.io/agent=agent
+                    node.kubernetes.io/role=agent
+                    type=virtual-kubelet
+Annotations:        ncp/transport_node: 0c00b615-c873-4370-a844-6337fe1086f2
+                    node.alpha.kubernetes.io/ttl: 0
+                    vmware-system-esxi-node-moid: host-30
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 14:47:46 -0700
+Taints:             <none>
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "esxi-w-01.lab.livefire.dev" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type    Status  LastHeartbeatTime                 LastTransitionTime                Reason         Message
+  ----    ------  -----------------                 ------------------                ------         -------
+  Ready   True    Tue, 04 May 2021 09:48:40 -0700   Tue, 04 May 2021 09:48:40 -0700   KubeletReady   Spherelet is ready.
+Addresses:
+  Hostname:    esxi-w-01.lab.livefire.dev
+  InternalIP:  172.16.1.5
+Capacity:
+  cpu:     32
+  memory:  1206523592Ki
+  pods:    1013
+Allocatable:
+  cpu:     28
+  memory:  1074902Mi
+  pods:    1013
+System Info:
+  Machine ID:                 
+  System UUID:                
+  Boot ID:                    
+  Kernel Version:             
+  OS Image:                   
+  Operating System:           ESXi
+  Architecture:               amd64
+  Container Runtime Version:  
+  Kubelet Version:            v1.19.1-sph-b0161d9
+  Kube-Proxy Version:         
+Non-terminated Pods:          (3 in total)
+  Namespace                   Name                              CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----                              ------------  ----------  ---------------  -------------  ---
+  tito                        titofe-597fb956ff-76txx           0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
+  tito                        titofe-597fb956ff-t5js4           0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
+  tito                        titosql-nd6bc-6bd654d578-4s6db    0 (0%)        0 (0%)      0 (0%)           0 (0%)         18d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests  Limits
+  --------           --------  ------
+  cpu                0 (0%)    0 (0%)
+  memory             0 (0%)    0 (0%)
+  ephemeral-storage  0 (0%)    0 (0%)
+Events:              <none>
+
+
+Name:               esxi-w-02.lab.livefire.dev
+Roles:              agent
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=CRX
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=esxi-w-02.lab.livefire.dev
+                    kubernetes.io/os=CRX
+                    node-role.kubernetes.io/agent=agent
+                    node.kubernetes.io/role=agent
+                    type=virtual-kubelet
+Annotations:        ncp/transport_node: 53b59eb6-07c3-43b8-bba8-f146d3e5d853
+                    node.alpha.kubernetes.io/ttl: 0
+                    vmware-system-esxi-node-moid: host-28
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 14:46:02 -0700
+Taints:             <none>
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "esxi-w-02.lab.livefire.dev" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type    Status  LastHeartbeatTime                 LastTransitionTime                Reason         Message
+  ----    ------  -----------------                 ------------------                ------         -------
+  Ready   True    Tue, 04 May 2021 09:48:41 -0700   Tue, 04 May 2021 09:48:41 -0700   KubeletReady   Spherelet is ready.
+Addresses:
+  Hostname:    esxi-w-02.lab.livefire.dev
+  InternalIP:  172.16.1.6
+Capacity:
+  cpu:     32
+  memory:  1206523612Ki
+  pods:    1013
+Allocatable:
+  cpu:     27
+  memory:  1040728Mi
+  pods:    1013
+System Info:
+  Machine ID:                       
+  System UUID:                      
+  Boot ID:                          
+  Kernel Version:                   
+  OS Image:                         
+  Operating System:                 ESXi
+  Architecture:                     amd64
+  Container Runtime Version:        
+  Kubelet Version:                  v1.19.1-sph-b0161d9
+  Kube-Proxy Version:               
+Non-terminated Pods:                (7 in total)
+  Namespace                         Name                                                   CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                         ----                                                   ------------  ----------  ---------------  -------------  ---
+  vmware-system-registry-195534283  harbor-195534283-harbor-core-cdc497d48-gnv9m           0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+  vmware-system-registry-195534283  harbor-195534283-harbor-database-0                     0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+  vmware-system-registry-195534283  harbor-195534283-harbor-jobservice-5df57b4f77-4npnq    0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+  vmware-system-registry-195534283  harbor-195534283-harbor-nginx-7f5d6dc9f6-l56sm         0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+  vmware-system-registry-195534283  harbor-195534283-harbor-portal-84d76d7d84-2tf49        0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+  vmware-system-registry-195534283  harbor-195534283-harbor-redis-0                        0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+  vmware-system-registry-195534283  harbor-195534283-harbor-registry-595f567785-tx4kt      0 (0%)        0 (0%)      0 (0%)           0 (0%)         14d
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests  Limits
+  --------           --------  ------
+  cpu                0 (0%)    0 (0%)
+  memory             0 (0%)    0 (0%)
+  ephemeral-storage  0 (0%)    0 (0%)
+Events:              <none>
+
+
+Name:               esxi-w-03.lab.livefire.dev
+Roles:              agent
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=CRX
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=esxi-w-03.lab.livefire.dev
+                    kubernetes.io/os=CRX
+                    node-role.kubernetes.io/agent=agent
+                    node.kubernetes.io/role=agent
+                    type=virtual-kubelet
+Annotations:        ncp/transport_node: d438a341-2932-409d-ab30-4687fc1c1b3b
+                    node.alpha.kubernetes.io/ttl: 0
+                    vmware-system-esxi-node-moid: host-26
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 14:43:34 -0700
+Taints:             <none>
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "esxi-w-03.lab.livefire.dev" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type    Status  LastHeartbeatTime                 LastTransitionTime                Reason         Message
+  ----    ------  -----------------                 ------------------                ------         -------
+  Ready   True    Tue, 04 May 2021 09:48:40 -0700   Tue, 04 May 2021 09:48:40 -0700   KubeletReady   Spherelet is ready.
+Addresses:
+  Hostname:    esxi-w-03.lab.livefire.dev
+  InternalIP:  172.16.1.7
+Capacity:
+  cpu:     32
+  memory:  1206523608Ki
+  pods:    1013
+Allocatable:
+  cpu:     25
+  memory:  1041319Mi
+  pods:    1013
+System Info:
+  Machine ID:                 
+  System UUID:                
+  Boot ID:                    
+  Kernel Version:             
+  OS Image:                   
+  Operating System:           ESXi
+  Architecture:               amd64
+  Container Runtime Version:  
+  Kubelet Version:            v1.19.1-sph-b0161d9
+  Kube-Proxy Version:         
+Non-terminated Pods:          (0 in total)
+  Namespace                   Name    CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----    ------------  ----------  ---------------  -------------  ---
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests  Limits
+  --------           --------  ------
+  cpu                0 (0%)    0 (0%)
+  memory             0 (0%)    0 (0%)
+  ephemeral-storage  0 (0%)    0 (0%)
+Events:              <none>
+
+
+Name:               esxi-w-04.lab.livefire.dev
+Roles:              agent
+Labels:             beta.kubernetes.io/arch=amd64
+                    beta.kubernetes.io/os=CRX
+                    kubernetes.io/arch=amd64
+                    kubernetes.io/hostname=esxi-w-04.lab.livefire.dev
+                    kubernetes.io/os=CRX
+                    node-role.kubernetes.io/agent=agent
+                    node.kubernetes.io/role=agent
+                    type=virtual-kubelet
+Annotations:        ncp/transport_node: c5bd73e2-f497-4d43-9456-0db4bdf89d98
+                    node.alpha.kubernetes.io/ttl: 0
+                    vmware-system-esxi-node-moid: host-24
+                    volumes.kubernetes.io/controller-managed-attach-detach: true
+CreationTimestamp:  Wed, 17 Mar 2021 14:41:25 -0700
+Taints:             <none>
+Unschedulable:      false
+Lease:              Failed to get lease: leases.coordination.k8s.io "esxi-w-04.lab.livefire.dev" is forbidden: User "sso:toddb@lab.livefire.dev" cannot get resource "leases" in API group "coordination.k8s.io" in the namespace "kube-node-lease"
+Conditions:
+  Type    Status  LastHeartbeatTime                 LastTransitionTime                Reason         Message
+  ----    ------  -----------------                 ------------------                ------         -------
+  Ready   True    Tue, 04 May 2021 09:48:37 -0700   Tue, 04 May 2021 09:48:37 -0700   KubeletReady   Spherelet is ready.
+Addresses:
+  Hostname:    esxi-w-04.lab.livefire.dev
+  InternalIP:  172.16.1.8
+Capacity:
+  cpu:     32
+  memory:  1206523612Ki
+  pods:    1013
+Allocatable:
+  cpu:     27
+  memory:  1075660Mi
+  pods:    1013
+System Info:
+  Machine ID:                 
+  System UUID:                
+  Boot ID:                    
+  Kernel Version:             
+  OS Image:                   
+  Operating System:           ESXi
+  Architecture:               amd64
+  Container Runtime Version:  
+  Kubelet Version:            v1.19.1-sph-b0161d9
+  Kube-Proxy Version:         
+Non-terminated Pods:          (0 in total)
+  Namespace                   Name    CPU Requests  CPU Limits  Memory Requests  Memory Limits  AGE
+  ---------                   ----    ------------  ----------  ---------------  -------------  ---
+Allocated resources:
+  (Total limits may be over 100 percent, i.e., overcommitted.)
+  Resource           Requests  Limits
+  --------           --------  ------
+  cpu                0 (0%)    0 (0%)
+  memory             0 (0%)    0 (0%)
+  ephemeral-storage  0 (0%)    0 (0%)
+Events:              <none>

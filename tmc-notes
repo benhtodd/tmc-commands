@@ -1,0 +1,46 @@
+
+
+tmc login --name admin-toddb
+
+tmc-bht-key: pxEzLLUtv6c7UE23MPfTemvwJjsXXZqzyTVzNbGxVxi1fxArBu7ZCE5Xk4UOiqDh
+
+
+tmc cluster create -t tkgs -n toddb-class-01 -g toddb-class --allowed-storage-classes vsphere-with-kubernetes --version v1.17.11+vmware.1-tkg.2.ad3d374 --storage-class vsphere-with-kubernetes --default-storage-class vsphere-with-kubernetes --management-cluster-name livefire-cs-sv01 --provisioner-name observability --worker-instance-type best-effort-xlarge --instance-type best-effort-small -q 1
+
+
+
+livefire-cs-sv01
+
+observability
+
+tmc cluster auth kubeconfig get toddb-prod-01 -m livefire-cs-sv01 -p observability > ~/Downloads/kubeconfig-toddb-prod-01.yml
+
+tmc cluster auth kubeconfig get toddb-prod-02 -m livefire-cs-sv01 -p observability > ~/Downloads/kubeconfig-toddb-prod-02.yml
+
+
+mv ~/.kube/config ~/.kube/config.bak
+
+KUBECONFIG=~/Downloads/kubeconfig-toddb-prod-01.yml:~/Downloads/kubeconfig-toddb-prod-02.yml kubectl config view --merge --flatten > ~/.kube/config
+
+chmod 600 ~/.kube/config
+
+
+
+
+
+    security: tmc
+
+    view Solutions : QR9Gl5tZsJvYSseB53X7cqHLPpde7GPmrsv0HGWg70O9FGX5uIp7KNKMa08ECb5G
+    view labs: IA4Dl2ITV77CW3k4I5L5PtlHxImubwRilcNwSZ9gF2ICi06VmP8faZY2s1rQWffz
+    admin: OR9kNloZ3yeFgmBbT3OIcISFKCvJuvofUgfRdNK24gYVqvrUZ8OVztthzx38PZld
+
+    bht-tmc-member: pxEzLLUtv6c7UE23MPfTemvwJjsXXZqzyTVzNbGxVxi1fxArBu7ZCE5Xk4UOiqDh
+
+    
+
+tmc cluster create -t tkgs -n <yourname>-prod-01 -g <yourname>-cna-prod --allowed-storage-classes vsphere-with-kubernetes --version <see step below> --storage-class vsphere-with-kubernetes --management-cluster-name livefire-cs-sv01 --provisioner-name observability --worker-instance-type best-effort-xlarge --instance-type best-effort-small -q 1
+
+
+
+
+
